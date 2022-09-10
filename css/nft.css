@@ -1,0 +1,246 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Soft-blue: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
+  --Very-dark-blue-main-BG: hsl(217, 54%, 11%);
+  --Very-dark-blue-card-BG: hsl(216, 50%, 16%);
+  --Very-dark-blue-line: hsl(215, 32%, 27%);
+  --White: hsl(0, 0%, 100%);
+}
+
+body {
+  background-color: var(--Very-dark-blue-main-BG);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Outfit", sans-serif;
+}
+
+.card {
+  background-color: var(--Very-dark-blue-card-BG);
+  width: 20rem;
+  height: 37rem;
+  border-radius: 15px;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+@media (max-width: 375px) {
+  .card {
+    background-color: var(--Very-dark-blue-card-BG);
+    width: 15rem;
+    height: 27rem;
+    border-radius: 15px;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+  }
+}
+
+.nft {
+  width: 100%;
+  height: 55%;
+  border-radius: 10px;
+}
+
+.color {
+  position: absolute;
+  background-color: #00fff74d;
+  width: 280px;
+  height: 19rem;
+  opacity: 0;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.color:hover {
+  opacity: 1;
+}
+
+@media (max-width: 375px) {
+  .color {
+    position: absolute;
+    background-color: #00fff74d;
+    width: 211px;
+    height: 221px;
+    opacity: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.view {
+  width: 2rem;
+  height: 2rem;
+}
+.view:hover {
+  opacity: 1;
+}
+
+@media (max-width: 375px) {
+  .nft {
+    width: 100%;
+    height: 55%;
+    border-radius: 10px;
+  }
+}
+
+h2 {
+  color: var(--White);
+  font-size: 20px;
+}
+h2:hover {
+  color: var(--Cyan);
+  cursor: pointer;
+}
+
+@media (max-width: 375px) {
+  h2 {
+    color: var(--White);
+    font-size: 18px;
+  }
+}
+
+.svg1 {
+  width: 11px;
+  height: 18px;
+  fill: #00fff8;
+  margin-right: 10px;
+}
+
+@media (max-width: 375px) {
+  .svg1 {
+    width: 11px;
+    height: 18px;
+    fill: #00fff8;
+  }
+}
+
+.svg2 {
+  width: 17px;
+  height: 17px;
+  fill: #8bacd9;
+  margin-right: 10px;
+}
+
+.text {
+  color: var(--Soft-blue);
+  font-size: 15px;
+}
+@media (max-width: 375px) {
+  .text {
+    color: var(--Soft-blue);
+    font-size: 12px;
+  }
+}
+
+.time {
+  color: var(--Cyan);
+  font-size: 15px;
+  display: flex;
+}
+
+@media (max-width: 375px) {
+  .time {
+    color: var(--Cyan);
+    font-size: 12px;
+    display: flex;
+  }
+}
+.days1 {
+  display: flex;
+}
+.days2 {
+  color: var(--Soft-blue);
+  padding-left: 5rem;
+  display: flex;
+}
+
+@media (max-width: 375px) {
+  .days2 {
+    color: var(--Soft-blue);
+    padding-left: 3rem;
+    display: flex;
+  }
+}
+
+.line {
+  position: absolute;
+  background-color: var(--Very-dark-blue-line);
+  width: 18rem;
+  height: 1px;
+  bottom: 90px;
+  left: 1rem;
+}
+@media (max-width: 375px) {
+  .line {
+    position: absolute;
+    content: "";
+    background-color: var(--Very-dark-blue-line);
+    width: 13rem;
+    height: 1px;
+    bottom: 70px;
+    left: 1rem;
+  }
+}
+
+.Creation {
+  display: flex;
+  align-items: center;
+}
+
+.mochi {
+  width: 45px;
+  height: 39px;
+}
+
+@media (max-width: 375px) {
+  .mochi {
+    width: 35px;
+    height: 35px;
+  }
+}
+.sec_text {
+  font-size: 12px;
+  padding-left: 10px;
+  color: var(--Soft-blue);
+}
+
+@media (max-width: 375px) {
+  .sec_text {
+    font-size: 12px;
+    padding-left: 10px;
+    color: var(--Soft-blue);
+  }
+}
+.name {
+  font-size: 15px;
+  color: var(--White);
+  padding-left: 5px;
+}
+.name:hover {
+  color: var(--Cyan);
+  cursor: pointer;
+}
+@media (max-width: 375px) {
+  .name {
+    font-size: 12px;
+    color: var(--White);
+    padding-left: 5px;
+  }
+}
